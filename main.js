@@ -36,7 +36,7 @@ class Field {
   }
 
   static generateField(height,width){
-    widthField = Number(width);
+     widthField = Number(width);
      newField = new Array(Number(height));
     for (let i=0;i<newField.length;i++){
       newField[i] = new Array;
@@ -46,8 +46,8 @@ class Field {
 }
 
 
-function randomHole(){
-  do{
+function randomHat(){
+  do {
     randomHeight =(Math.floor(Math.random()*height));
     randomWidth = (Math.floor(Math.random()*width));
 }
@@ -65,7 +65,7 @@ function createField(arr){
     }
     arr[0].splice(0,1,pathCharacter);
   }
-    randomHole();
+    randomHat();
     arr[randomHeight].splice(randomWidth,1,hat);
     randomField = new Field(arr);
 }
